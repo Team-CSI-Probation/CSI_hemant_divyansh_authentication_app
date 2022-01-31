@@ -62,6 +62,7 @@ public class OtpVerificationNumber extends AppCompatActivity {
 
                             @Override
                             public void onVerificationFailed(@NonNull FirebaseException e) {
+                                Log.e("TAG", "onVerificationFailed: " );
                                 Toast.makeText(OtpVerificationNumber.this,e.getMessage(),Toast.LENGTH_SHORT).show();
 
                             }
